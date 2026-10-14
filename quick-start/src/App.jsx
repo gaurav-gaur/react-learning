@@ -44,8 +44,18 @@ const products = [
   { id: 4, name: 'Banana'}
 ];
 
-export default function App() {
+function Counter() {
   const [count, setCount] = useState(0);
+  
+  return (
+    <button onClick={() => setCount(count+1)}>
+      Items purchased: {count}
+    </button>
+  );
+}
+
+export default function App() {
+  
   return (
     <>
     <div>
@@ -64,9 +74,8 @@ export default function App() {
     <ul>{products.map(product => (
         <li key={product.id}>{product.name}</li>
       ))}</ul>
-      <button onClick={() => setCount(count+1)}>
-        Items purchased: {count}
-      </button>
+      <Counter />
+      <Counter />
       <button onClick={() => alert('Shopping list saved!')}>
         Save List
       </button>
