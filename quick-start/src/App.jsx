@@ -1,3 +1,7 @@
+function MyHeading() {
+  return <h1>Welcome to my app</h1>
+}
+
 function MyButton() {
   return (
     <button>
@@ -18,9 +22,12 @@ function AboutPage() {
 export default function MyApp() {
   return (
     <div>
-      <h1>Welcome to my app</h1>
+      <MyHeading />
+      <h2>My First React Page</h2>
+      <p>I am learning JSX</p>
+      <button>Click Me</button>
       <MyButton />
-      <AboutPage /> 
+      <AboutPage />
     </div>
   );
 }
