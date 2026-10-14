@@ -31,13 +31,13 @@ Learn React fundamentals, understand frontend development, and build small Singl
 - [x] Creating and nesting components
 - [x] Writing markup with JSX
 - [x] Adding styles
-- [ ] Displaying data
-- [ ] Conditional rendering
-- [ ] Rendering lists
-- [ ] Responding to events
-- [ ] Updating the screen with state
-- [ ] Using Hooks
-- [ ] Sharing data between components
+- [x] Displaying data
+- [x] Conditional rendering
+- [x] Rendering lists
+- [x] Responding to events
+- [x] Updating the screen with state
+- [x] Using Hooks
+- [x] Sharing data between components
 
 ## Running Locally
 

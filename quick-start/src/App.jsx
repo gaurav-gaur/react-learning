@@ -44,18 +44,21 @@ const products = [
   { id: 4, name: 'Banana'}
 ];
 
-function Counter() {
-  const [count, setCount] = useState(0);
-  
+function Counter({count, onIncrement}) {
   return (
-    <button onClick={() => setCount(count+1)}>
+    <button onClick={onIncrement}>
       Items purchased: {count}
     </button>
   );
 }
 
 export default function App() {
-  
+  const [count, setCount] = useState(0);
+
+  function handleIncrement() {
+    setCount(previous => previous +1);
+  }
+
   return (
     <>
     <div>
@@ -74,8 +77,9 @@ export default function App() {
     <ul>{products.map(product => (
         <li key={product.id}>{product.name}</li>
       ))}</ul>
-      <Counter />
-      <Counter />
+      <Counter count={count} onIncrement={handleIncrement} />
+      <Counter count={count} onIncrement={handleIncrement}/>
+
       <button onClick={() => alert('Shopping list saved!')}>
         Save List
       </button>
