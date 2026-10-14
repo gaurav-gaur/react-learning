@@ -182,3 +182,13 @@
     border-right-color: var(--border);
   }
 }
+
+.shopping-list {
+  padding: 20px;
+  border-radius: 1px;
+  background-color: lightblue;
+}
+
+.shopping-list h1{
+  color: navy;
+}

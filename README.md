@@ -30,7 +30,7 @@ Learn React fundamentals, understand frontend development, and build small Singl
 
 - [x] Creating and nesting components
 - [x] Writing markup with JSX
-- [ ] Adding styles
+- [x] Adding styles
 - [ ] Displaying data
 - [ ] Conditional rendering
 - [ ] Rendering lists
