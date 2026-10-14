@@ -28,7 +28,7 @@ Learn React fundamentals, understand frontend development, and build small Singl
 
 ## Learning Checklist
 
-- [ ] Creating and nesting components
+- [x] Creating and nesting components
 - [ ] Writing markup with JSX
 - [ ] Adding styles
 - [ ] Displaying data
