@@ -36,6 +36,13 @@ const store = {
   isOpen: open
 };
 
+const products = [
+  { id: 1, name: 'Apple'},
+  { id: 2, name: 'Milk' },
+  { id: 3, name: 'Bread'},
+  { id: 4, name: 'Banana'}
+];
+
 export default function App() {
   return (
     <>
@@ -52,6 +59,9 @@ export default function App() {
     <div className="shopping-list">
       <h1>My Shopping List</h1>
     </div>
+    <ul>{products.map(product => (
+        <li key={product.id}>{product.name}</li>
+      ))}</ul>
     </>
   );
 }
