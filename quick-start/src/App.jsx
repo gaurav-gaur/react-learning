@@ -62,6 +62,9 @@ export default function App() {
     <ul>{products.map(product => (
         <li key={product.id}>{product.name}</li>
       ))}</ul>
+      <button onClick={() => alert('Shopping list saved!')}>
+        Save List
+      </button>
     </>
   );
 }
