@@ -1,4 +1,5 @@
 import './App.css';
+import { useState } from 'react';
 
 function MyHeading() {
   return <h1>Welcome to my app</h1>
@@ -44,6 +45,7 @@ const products = [
 ];
 
 export default function App() {
+  const [count, setCount] = useState(0);
   return (
     <>
     <div>
@@ -62,6 +64,9 @@ export default function App() {
     <ul>{products.map(product => (
         <li key={product.id}>{product.name}</li>
       ))}</ul>
+      <button onClick={() => setCount(count+1)}>
+        Items purchased: {count}
+      </button>
       <button onClick={() => alert('Shopping list saved!')}>
         Save List
       </button>
