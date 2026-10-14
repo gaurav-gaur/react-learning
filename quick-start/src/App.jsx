@@ -31,6 +31,11 @@ function AboutPage() {
   );
 }
 
+const store = {
+  name: "My Grocery Store",
+  isOpen: open
+};
+
 export default function App() {
   return (
     <>
@@ -42,6 +47,8 @@ export default function App() {
       <button>Learn More</button>
       <AboutPage />
     </div>
+    <h1>{store.name}</h1>
+    <p>{store.isOpen ? 'Store Open' : 'Store Closed'}</p>
     <div className="shopping-list">
       <h1>My Shopping List</h1>
     </div>
